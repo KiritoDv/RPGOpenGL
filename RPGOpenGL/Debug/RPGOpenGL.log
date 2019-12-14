@@ -1,0 +1,21 @@
+﻿  MapRenderer.cpp
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\Map.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\Block.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\TextureManager.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\GFXUtil.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(39,9): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(40,9): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(43,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\proyects\rpg-gl\RPGOpenGL\RPGOpenGL\MapRenderer.cpp(43,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  RPGOpenGL.vcxproj -> D:\proyects\rpg-gl\RPGOpenGL\Debug\RPGOpenGL.exe

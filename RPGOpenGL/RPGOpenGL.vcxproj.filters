@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de origen\util">
+      <UniqueIdentifier>{4be48a6d-920a-4d67-866e-6c4e6ed5fd1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\util">
+      <UniqueIdentifier>{32e051d3-1d02-42ad-9015-9b78ff6dc8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\map">
+      <UniqueIdentifier>{d7278bbe-f180-4cf0-bffa-2a2e14dc76d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\map">
+      <UniqueIdentifier>{b022c703-4a29-489c-b067-482c4e4b835a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\engine">
+      <UniqueIdentifier>{023899a7-a26f-47c0-a1fa-dbd253a2f046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\engine">
+      <UniqueIdentifier>{885c6148-ee37-4819-a3f2-e7f370b07cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\renderer">
+      <UniqueIdentifier>{0f0fdc60-579e-4a93-8be8-30d1de1ad967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\renderer">
+      <UniqueIdentifier>{9833dc9a-d741-4044-b18a-e9098775f1cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\manager">
+      <UniqueIdentifier>{fab912e2-77d3-401b-b7cc-80883c9e2760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\manager">
+      <UniqueIdentifier>{0d28832a-f934-4258-94a2-e3a040b7f3d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\camera">
+      <UniqueIdentifier>{b2eaca39-b406-4e71-8443-c1785652aa81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\camera">
+      <UniqueIdentifier>{044379f9-a8c4-4e62-92cc-1e1a2de677ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="GFXUtil.cpp">
+      <Filter>Archivos de origen\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Archivos de origen\map</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Archivos de origen\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Archivos de origen\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Archivos de origen\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Archivos de origen\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MapRenderer.cpp">
+      <Filter>Archivos de origen\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Archivos de origen\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Archivos de origen\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Display.cpp">
+      <Filter>Archivos de origen\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Archivos de origen\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Archivos de origen\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Archivos de encabezado\map</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MapRenderer.h">
+      <Filter>Archivos de encabezado\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Archivos de encabezado\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>Archivos de encabezado\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Archivos de encabezado\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GFXUtil.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Archivos de encabezado\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Archivos de encabezado\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RPGOpenGL.rc">
+      <Filter>Archivos de recursos</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
