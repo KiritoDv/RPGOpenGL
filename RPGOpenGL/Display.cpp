@@ -1,17 +1,18 @@
 #include "Display.h"
 
-//#include "Image.h"
+#include <stb_image.h>
 
 void Display::initDisplay(int width, int height, GLFWwindow* window) {
 	windowWidth = width;
 	windowHeight = height;
 
-	//Image i;
+	//Image i;	
 
-	//GLFWimage images[1];
-	//images[0].pixels = i.getData("assets/Grass.png");
-	//glfwSetWindowIcon(window, 1, images);
-	//i.freeData();
+	GLFWimage icons[1];
+	icons[0].pixels = stbi_load("assets/icon512.png", &icons[0].width, &icons[0].height, 0, STBI_rgb_alpha);
+	glfwSetWindowIcon(window, 1, icons);
+	stbi_image_free(icons[0].pixels);
+
 }
 
 void Display::resizeDisplay(int newWidth, int newHeight) {

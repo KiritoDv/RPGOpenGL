@@ -1,10 +1,8 @@
 #include "Texture.h"
 #include "gl/glew.h"
 #include <iostream>
-#include "Image.h"
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
 
+#include <stb_image.h>
 
 Texture::Texture(){
 	
@@ -14,24 +12,21 @@ Texture::Texture(const char *filename) {
 
 	printf("Loading %s\n", filename);
 
-	glGenTextures(1, &id);		
+	glGenTextures(1, &id);
 
-	Image i;
 	int nrChannels;
+	unsigned char* data = stbi_load(filename, &width, &height, &nrChannels, STBI_rgb_alpha);	
 
-	unsigned char* data = stbi_load(filename, &width, &height, &nrChannels, STBI_rgb_alpha);
-
-	if (data) {		
+	if (data) {
 		glBindTexture(GL_TEXTURE_2D, id);
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-		i.freeData();
-
-		printf("Loaded\n");
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);		
+		
 		stbi_image_free(data);
+		glBindTexture(GL_TEXTURE_2D, 0);
 	}
 	else {
 		printf("Unable to load texture");		

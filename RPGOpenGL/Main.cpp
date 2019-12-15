@@ -1,12 +1,17 @@
 #include "Game.h"
+
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb_image.h>
+
 #include <gl/glew.h>
+#include <gl/freeglut.h>
+#include <glm/vec3.hpp>
+
 #include "Display.h"
-#include <iostream>
 #include "Color.h";
 #include "Camera.h"
-#include <gl/freeglut.h>
 
-#include <glm/vec3.hpp>
+#include <windows.h>
 
 using namespace glm;
 
@@ -15,6 +20,8 @@ int height = 720;
 bool fullscreen = false;
 
 int main( void ) {	
+
+	//ShowWindow(GetConsoleWindow(), SW_HIDE);
 
 	if (!glfwInit()) {
 		fprintf(stderr, "Failed to start GLFW");
@@ -76,9 +83,9 @@ int main( void ) {
 		cam.updateCamera(width, height, deltaTime, window);
 
 		Color c(100, 149, 237, 255);
-
+		
 		glClearColor(c.r / 255.0f, c.g / 255.0f, c.b / 255.0f, c.a / 255.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT);
 
 		glEnable(GL_TEXTURE_2D);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

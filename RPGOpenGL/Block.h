@@ -12,5 +12,7 @@ class Block{
 		Material material;
 		Block();
 		Block(vec3 location, Material material);
+	private: 
+		Color genColor();
 };
 

@@ -7,7 +7,7 @@ class Material{
 		int materialId;
 		Material();
 		Material(int materialId, int textureId, const char* displayName);
-		Texture getTexture();
+		Texture getTexture();		
 	private:
 		Texture tex;
 };

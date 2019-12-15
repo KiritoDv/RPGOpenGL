@@ -6,8 +6,8 @@
 
 class MapRenderer{
 	public:
-		virtual void drawMap();
-		void initMap(TextureManager t, MaterialManager mManager);
+		virtual void drawMap(TextureManager tManager);
+		void initMap(MaterialManager mManager);	
 	private:
 		Map map = Map::instance();		
 };

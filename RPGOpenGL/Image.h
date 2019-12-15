@@ -2,7 +2,10 @@
 class Image{	
 	public:		
 		int width;
-		int height;
-		unsigned char* getData(const char* filename);
+		int height;		
+		void initData(const char* filename);
+		unsigned char* getData() const { return _imgData; }
 		void freeData();
+	protected:
+		unsigned char* _imgData;
 };
